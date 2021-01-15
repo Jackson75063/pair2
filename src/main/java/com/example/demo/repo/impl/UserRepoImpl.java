@@ -24,8 +24,9 @@ public class UserRepoImpl implements UserRepo {
     }
 
     @Override
-    public void addUser(User user) {
-        this.database.add(user);
+    public User addUser(User user) {
+        database.add(user);
+        return user;
     }
 
     @Override

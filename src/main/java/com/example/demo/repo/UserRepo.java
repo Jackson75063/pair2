@@ -6,7 +6,7 @@ import java.util.Collection;
 
 public interface UserRepo {
 
-    void addUser(User user);
+    User addUser(User user);
 
     Collection<User> getAll();
 
